@@ -84,23 +84,4 @@ Popular locations are the locations that are requested via clients for more than
  1. Requests for locations that are not in predefined location list still bust be satisfied, but without strict SLA requirements;
  2. If location is requested for more than n times (n is configurable), it must be automatically included in 'Predefined location' framework and satisfy same 500ms SLA requirement. Though this will be reset after application redeployment/restart.
 
-# Provided base implementation
-
-Base implementation is provided to take the boring part of set-up/wiring away and allow for prospect candidate to concentrate on engineering internals, adding tests, working on algo. 
-
-Any needed additional libraries can be used, but changes/deviations from provided base implementation (like changing Spring REST to Jersey) can be done with proper motivation/explanation.
-
-Additional notes:
-
- * This is simple maven project - 'mvn clean', 'mvn test'... works;
- * To run application - 'mvn jetty:run';
- * REST Endpoint URI: [http://localhost:8080/weather/](http://localhost:8080/weather/)
- * SOAP WSDL URI: [http://localhost:8080/ws/weather.wsdl](http://localhost:8080/ws/weather.wsdl).
-
-# Deliverables
-
-Packaged git repo with implementation and any additional resources you see fit.
-
-# Other considerations
-
-The implementation you create should not be made publicly available or otherwise shared/distributed to any outside parties.  
+ 
