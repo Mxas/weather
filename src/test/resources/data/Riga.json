@@ -1,0 +1,33 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "conditions": 1
+  }
+		, "results": [
+		{
+		"name": "Riga",
+		"city": "Riga",
+		"state": "",
+		"country": "LV",
+		"country_iso3166":"LV",
+		"country_name":"Latvia",
+		"zmw": "00000.1.26422",
+		"l": "/q/zmw:00000.1.26422"
+		}
+		,
+		{
+		"name": "Riga",
+		"city": "Riga",
+		"state": "MI",
+		"country": "US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"zmw": "49276.1.99999",
+		"l": "/q/zmw:49276.1.99999"
+		}
+		]
+	}
+}

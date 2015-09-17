@@ -1,0 +1,94 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "conditions": 1
+  }
+	}
+  ,	"current_observation": {
+		"image": {
+		"url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Helsinki, Finland",
+		"city":"Helsinki",
+		"state":"",
+		"state_name":"Finland",
+		"country":"FI",
+		"country_iso3166":"FI",
+		"zip":"00000",
+		"magic":"1",
+		"wmo":"02974",
+		"latitude":"60.31999969",
+		"longitude":"24.96999931",
+		"elevation":"56.00000000"
+		},
+		"observation_location": {
+		"full":"Helsinki, ",
+		"city":"Helsinki",
+		"state":"",
+		"country":"FI",
+		"country_iso3166":"FI",
+		"latitude":"60.31722260",
+		"longitude":"24.96333313",
+		"elevation":"184 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"EFHK",
+		"observation_time":"Last Updated on October 7, 1:50 PM EEST",
+		"observation_time_rfc822":"Tue, 07 Oct 2014 13:50:00 +0300",
+		"observation_epoch":"1412679000",
+		"local_time_rfc822":"Tue, 07 Oct 2014 14:18:30 +0300",
+		"local_epoch":"1412680710",
+		"local_tz_short":"EEST",
+		"local_tz_long":"Europe/Helsinki",
+		"local_tz_offset":"+0300",
+		"weather":"Mostly Cloudy",
+		"temperature_string":"48 F (9 C)",
+		"temp_f":48,
+		"temp_c":9,
+		"relative_humidity":"66%",
+		"wind_string":"From the East at 17 MPH",
+		"wind_dir":"East",
+		"wind_degrees":100,
+		"wind_mph":17,
+		"wind_gust_mph":0,
+		"wind_kph":28,
+		"wind_gust_kph":0,
+		"pressure_mb":"1032",
+		"pressure_in":"30.48",
+		"pressure_trend":"-",
+		"dewpoint_string":"37 F (3 C)",
+		"dewpoint_f":37,
+		"dewpoint_c":3,
+		"heat_index_string":"NA",
+		"heat_index_f":"NA",
+		"heat_index_c":"NA",
+		"windchill_string":"NA",
+		"windchill_f":"NA",
+		"windchill_c":"NA",
+		"feelslike_string":"48 F (9 C)",
+		"feelslike_f":"48",
+		"feelslike_c":"9",
+		"visibility_mi":"6.2",
+		"visibility_km":"10.0",
+		"solarradiation":"--",
+		"UV":"1","precip_1hr_string":"-9999.00 in (-9999.00 mm)",
+		"precip_1hr_in":"-9999.00",
+		"precip_1hr_metric":"--",
+		"precip_today_string":"0.00 in (0.0 mm)",
+		"precip_today_in":"0.00",
+		"precip_today_metric":"0.0",
+		"icon":"mostlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+		"forecast_url":"http://www.wunderground.com/global/stations/02974.html",
+		"history_url":"http://www.wunderground.com/history/airport/EFHK/2014/10/7/DailyHistory.html",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=60.31722260,24.96333313",
+		"nowcast":""
+	}
+}

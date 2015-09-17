@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="TietoWeather" resourceRoot="" soapui-version="4.5.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:18080" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:8080/weather/weather</con:endpoint></con:endpoints><con:resource name="all" path="weather/"><con:settings/><con:parameters/><con:resource name="Vilnius" path="Vilnius"><con:settings/><con:parameters/><con:method name="Method 1" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:request name="Request 1" mediaType="application/xml" accept="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080/weather/weather/</con:endpoint><con:request/><con:credentials><con:username>weather</con:username><con:password>w34th3r</con:password><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:method name="Method 1" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>401 404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>500</con:status><con:params/></con:representation><con:request name="Request 1" mediaType="application/xml" accept="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080/weather</con:endpoint><con:request/><con:credentials><con:username>weather</con:username><con:password>w34th3r</con:password><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="Riga" path="Riga"><con:settings/><con:parameters/><con:method name="Method 1" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>401 404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>500</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" mediaType="application/xml" accept="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080/weather/weather/</con:endpoint><con:request/><con:credentials><con:username>weather</con:username><con:password>w34th3r</con:password><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="LV/Riga" path="LV/Riga"><con:settings/><con:parameters/><con:method name="LV/Riga" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:riga="http://localhost/weather/weather/LV/Riga">riga:Response</con:element></con:representation><con:request name="Request 1" mediaType="application/xml" accept="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080/weather/weather</con:endpoint><con:request/><con:credentials><con:username>weather</con:username><con:password>w34th3r</con:password><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="WeatherSoap11" type="wsdl" bindingName="{http://tieto.com/weather/schemas}WeatherSoap11" soapVersion="1_1" anonymous="optional" definition="http://localhost:18080/weather/ws/weather.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://localhost:18080/weather/ws/weather.wsdl"><con:part><con:url>http://localhost:18080/weather/ws/weather.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tieto.com/weather/schemas" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://tieto.com/weather/schemas" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://tieto.com/weather/schemas">
+  <wsdl:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://tieto.com/weather/schemas" xmlns:weather="http://tieto.com/weather/schemas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="WeatherRequest">
+        <xs:complexType>
+          <xs:sequence maxOccurs="unbounded">
+            <xs:element name="city" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WeatherResponse">
+        <xs:complexType>
+          <xs:sequence maxOccurs="unbounded">
+            <xs:element name="weatherObservation" type="weather:WeatherObservationType"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="WeatherObservationType">
+        <xs:sequence>
+          <xs:element name="location" type="xs:string"/>
+          <xs:element name="relative_humidity" type="xs:string"/>
+          <xs:element name="temp_c" type="xs:double"/>
+          <xs:element name="weather" type="xs:string"/>
+          <xs:element name="wind_dir" type="xs:string"/>
+          <xs:element name="wind_string" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="WeatherResponse">
+    <wsdl:part element="tns:WeatherResponse" name="WeatherResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="WeatherRequest">
+    <wsdl:part element="tns:WeatherRequest" name="WeatherRequest"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="Weather">
+    <wsdl:operation name="Weather">
+      <wsdl:input message="tns:WeatherRequest" name="WeatherRequest"></wsdl:input>
+      <wsdl:output message="tns:WeatherResponse" name="WeatherResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WeatherSoap11" type="tns:Weather">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Weather">
+      <soap:operation soapAction=""/>
+      <wsdl:input name="WeatherRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="WeatherResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WeatherService">
+    <wsdl:port binding="tns:WeatherSoap11" name="WeatherSoap11">
+      <soap:address location="http://localhost:18080/weather/ws/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/weather/ws/weather</con:endpoint></con:endpoints><con:operation isOneWay="false" action="" name="Weather" bindingOperationName="Weather" type="Request-Response" outputName="WeatherResponse" inputName="WeatherRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1" outgoingWss="" incomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/weather/ws/weather</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://tieto.com/weather/schemas">
+
+   <soapenv:Body>
+      <sch:WeatherRequest>
+         <sch:city>Vilnius</sch:city>
+      </sch:WeatherRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:username/><con:password/><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tieto.com/weather/schemas/Weather/WeatherRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite name="WeatherSoap11 TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Weather TestCase" searchProperties="true" id="b13c2e1b-d8e7-4961-9e88-2dd30a9fd0ee"><con:settings/><con:testStep type="request" name="Vilnius" id="456932d5-dc56-454e-a8bd-9170fea8cfd9"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>WeatherSoap11</con:interface><con:operation>Weather</con:operation><con:request name="Vilnius"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/weather/ws/weather</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://tieto.com/weather/schemas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sch:WeatherRequest>
+         <sch:city>Vilnius</sch:city>
+      </sch:WeatherRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Fault Assertion" name="Not SOAP Fault"/><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://tieto.com/weather/schemas/Weather/WeatherRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Tallinn" id="428e0ae9-05db-4197-be55-916fc4bee16c"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>WeatherSoap11</con:interface><con:operation>Weather</con:operation><con:request name="Tallinn"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/weather/ws/weather</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://tieto.com/weather/schemas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sch:WeatherRequest>
+         <sch:city>Tallinn</sch:city>
+      </sch:WeatherRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:credentials><con:username/><con:password/><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Helsinki" id="19566a97-4ec8-4b04-978c-28861275a9e8"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>WeatherSoap11</con:interface><con:operation>Weather</con:operation><con:request name="Helsinki"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/weather/ws/weather</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://tieto.com/weather/schemas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sch:WeatherRequest>
+         <sch:city>Helsinki</sch:city>
+      </sch:WeatherRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="fiveCities" id="1d5e9c68-7bfa-4516-ac9a-7fdab390c8ea"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>WeatherSoap11</con:interface><con:operation>Weather</con:operation><con:request name="fiveCities"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/weather/ws/weather</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://tieto.com/weather/schemas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sch:WeatherRequest>
+          <sch:city>Vilnius</sch:city>
+          <sch:city>LV/Riga</sch:city>
+		<sch:city>Jonava</sch:city>
+		<sch:city>Tallinn</sch:city>
+         <sch:city>Helsinki</sch:city>
+      </sch:WeatherRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:loadTest name="LoadTest 1"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>10</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>20</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type><con:config><testDelay>120</testDelay><randomFactor>0.5</randomFactor></con:config></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/><con:securityTest name="SecurityTest 1" failOnError="true"><con:settings/><con:properties/></con:securityTest></con:testCase><con:properties/></con:testSuite><con:endpointStrategy xsi:type="con:DefaultEndpointStrategy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:endpoint mode="COMPLEMENT" password="w34th3r" username="weather" wssType="PasswordText" wssTimeToLive="" outgoingWss="">http://localhost:18080/weather/ws/</con:endpoint><con:endpoint mode="OVERRIDE" username="weather" password="w34th3r">http://localhost:8080/weather/weather</con:endpoint><con:endpoint mode="COMPLEMENT" domain="" wssType="PasswordText" username="weather" password="w34th3r">http://localhost:8080/weather/ws/weather</con:endpoint></con:endpointStrategy><con:properties/><con:wssContainer/><con:sensitiveInformation/></con:soapui-project>

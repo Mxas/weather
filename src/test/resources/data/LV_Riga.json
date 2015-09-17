@@ -1,0 +1,94 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "conditions": 1
+  }
+	}
+  ,	"current_observation": {
+		"image": {
+		"url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Riga, Latvia",
+		"city":"Riga",
+		"state":"",
+		"state_name":"Latvia",
+		"country":"LV",
+		"country_iso3166":"LV",
+		"zip":"00000",
+		"magic":"1",
+		"wmo":"26422",
+		"latitude":"56.97000122",
+		"longitude":"24.04999924",
+		"elevation":"7.00000000"
+		},
+		"observation_location": {
+		"full":"Baltic Container Terminal, RÄ«ga, RÄ«GAS PILSÄTA",
+		"city":"Baltic Container Terminal, RÄ«ga",
+		"state":"RÄ«GAS PILSÄTA",
+		"country":"LATVIA",
+		"country_iso3166":"LV",
+		"latitude":"57.005428",
+		"longitude":"24.097666",
+		"elevation":"3 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"IRGASPIL2",
+		"observation_time":"Last Updated on October 7, 2:10 PM EEST",
+		"observation_time_rfc822":"Tue, 07 Oct 2014 14:10:05 +0300",
+		"observation_epoch":"1412680205",
+		"local_time_rfc822":"Tue, 07 Oct 2014 14:17:02 +0300",
+		"local_epoch":"1412680622",
+		"local_tz_short":"EEST",
+		"local_tz_long":"Europe/Riga",
+		"local_tz_offset":"+0300",
+		"weather":"Clear",
+		"temperature_string":"55.1 F (12.8 C)",
+		"temp_f":55.1,
+		"temp_c":12.8,
+		"relative_humidity":"57%",
+		"wind_string":"From the East at 24.0 MPH Gusting to 31.0 MPH",
+		"wind_dir":"East",
+		"wind_degrees":98,
+		"wind_mph":24.0,
+		"wind_gust_mph":"31.0",
+		"wind_kph":38.6,
+		"wind_gust_kph":"49.9",
+		"pressure_mb":"1027",
+		"pressure_in":"30.33",
+		"pressure_trend":"0",
+		"dewpoint_string":"40 F (4 C)",
+		"dewpoint_f":40,
+		"dewpoint_c":4,
+		"heat_index_string":"NA",
+		"heat_index_f":"NA",
+		"heat_index_c":"NA",
+		"windchill_string":"NA",
+		"windchill_f":"NA",
+		"windchill_c":"NA",
+		"feelslike_string":"55.1 F (12.8 C)",
+		"feelslike_f":"55.1",
+		"feelslike_c":"12.8",
+		"visibility_mi":"N/A",
+		"visibility_km":"N/A",
+		"solarradiation":"--",
+		"UV":"-1","precip_1hr_string":"0.00 in ( 0 mm)",
+		"precip_1hr_in":"0.00",
+		"precip_1hr_metric":" 0",
+		"precip_today_string":"0.00 in (0 mm)",
+		"precip_today_in":"0.00",
+		"precip_today_metric":"0",
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"forecast_url":"http://www.wunderground.com/global/stations/26422.html",
+		"history_url":"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=IRGASPIL2",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=57.005428,24.097666",
+		"nowcast":""
+	}
+}

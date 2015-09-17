@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           xmlns:weather="http://tieto.com/weather/schemas"
+           targetNamespace="http://tieto.com/weather/schemas">
+
+    <xs:element name="WeatherRequest">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element name="city" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="WeatherResponse">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element name="weatherObservation" type="weather:WeatherObservationType" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="WeatherObservationType">
+        <xs:sequence>
+            <xs:element name="location" type="xs:string" />
+            <xs:element name="relative_humidity" type="xs:string" />
+            <xs:element name="temp_c" type="xs:double" />
+            <xs:element name="weather" type="xs:string" />
+            <xs:element name="wind_dir" type="xs:string" />
+            <xs:element name="wind_string" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

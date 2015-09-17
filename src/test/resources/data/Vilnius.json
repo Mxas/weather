@@ -1,0 +1,94 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "conditions": 1
+  }
+	}
+  ,	"current_observation": {
+		"image": {
+		"url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Vilnius, Lithuania",
+		"city":"Vilnius",
+		"state":"",
+		"state_name":"Lithuania",
+		"country":"L1",
+		"country_iso3166":"LT",
+		"zip":"00000",
+		"magic":"1",
+		"wmo":"26730",
+		"latitude":"54.63000107",
+		"longitude":"25.28000069",
+		"elevation":"156.00000000"
+		},
+		"observation_location": {
+		"full":"Vilnius, ",
+		"city":"Vilnius",
+		"state":"",
+		"country":"L1",
+		"country_iso3166":"LT",
+		"latitude":"54.63413239",
+		"longitude":"25.28576660",
+		"elevation":"643 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"EYVI",
+		"observation_time":"Last Updated on October 7, 1:50 PM EEST",
+		"observation_time_rfc822":"Tue, 07 Oct 2014 13:50:00 +0300",
+		"observation_epoch":"1412679000",
+		"local_time_rfc822":"Tue, 07 Oct 2014 14:17:20 +0300",
+		"local_epoch":"1412680640",
+		"local_tz_short":"EEST",
+		"local_tz_long":"Europe/Vilnius",
+		"local_tz_offset":"+0300",
+		"weather":"Clear",
+		"temperature_string":"54 F (12 C)",
+		"temp_f":54,
+		"temp_c":12,
+		"relative_humidity":"58%",
+		"wind_string":"From the SE at 17 MPH",
+		"wind_dir":"SE",
+		"wind_degrees":130,
+		"wind_mph":17,
+		"wind_gust_mph":0,
+		"wind_kph":28,
+		"wind_gust_kph":0,
+		"pressure_mb":"1028",
+		"pressure_in":"30.36",
+		"pressure_trend":"0",
+		"dewpoint_string":"39 F (4 C)",
+		"dewpoint_f":39,
+		"dewpoint_c":4,
+		"heat_index_string":"NA",
+		"heat_index_f":"NA",
+		"heat_index_c":"NA",
+		"windchill_string":"NA",
+		"windchill_f":"NA",
+		"windchill_c":"NA",
+		"feelslike_string":"54 F (12 C)",
+		"feelslike_f":"54",
+		"feelslike_c":"12",
+		"visibility_mi":"N/A",
+		"visibility_km":"N/A",
+		"solarradiation":"--",
+		"UV":"-1","precip_1hr_string":"-9999.00 in (-9999.00 mm)",
+		"precip_1hr_in":"-9999.00",
+		"precip_1hr_metric":"--",
+		"precip_today_string":"0.00 in (0.0 mm)",
+		"precip_today_in":"0.00",
+		"precip_today_metric":"0.0",
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"forecast_url":"http://www.wunderground.com/global/stations/26730.html",
+		"history_url":"http://www.wunderground.com/history/airport/EYVI/2014/10/7/DailyHistory.html",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=54.63413239,25.28576660",
+		"nowcast":""
+	}
+}
